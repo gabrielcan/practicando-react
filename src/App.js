@@ -28,7 +28,7 @@ function App() {
 
   const handlePrueba = (idDelete) => {
     const newArray = tareaEnviar.filter((item) => item.id != idDelete);
-
+    console.log(newArray);
     setTareaEnviar(newArray);
   };
 
