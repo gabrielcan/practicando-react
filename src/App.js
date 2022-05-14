@@ -4,6 +4,8 @@ import Contador from "./components/Contador/Contador";
 import AgregarTareas from "./components/AgregarTareas/AgregarTareas";
 import ListaTareas from "./components/listaTareas/ListaTareas";
 import { v4 as uuidv4 } from "uuid";
+import NavBarV1 from "./components/NavBarv1/NavBarV1";
+import Footer_v1 from "./components/footer_v1/Footer_v1";
 
 function App() {
   const [tareaEnviar, setTareaEnviar] = useState([]);
@@ -23,6 +25,8 @@ function App() {
     if (newTarea.nomTarea != "") {
       setTareaEnviar([...tareaEnviar, newTarea]);
       setTexto("");
+    } else {
+      alert("Debe Ingresar una Tarea")
     }
   };
 
@@ -54,6 +58,8 @@ function App() {
 
   return (
     <div className="App">
+    
+    <NavBarV1/>
       <AgregarTareas
         text={texto}
         handleEnviarTarea={handleEnviarTarea}
@@ -65,6 +71,7 @@ function App() {
         handlePrueba={handlePrueba}
         handleChecked={handleChecked}
       />
+      <Footer_v1/>
     </div>
   );
 }

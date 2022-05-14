@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer_item {
+  list-style: none;
+  text-decoration: none;
+}
+.footer_link {
+  text-decoration: none;
+}
+.RSocial_icono {
+    border-radius: 50%;
+    width: 1.5rem;
+}
+.RSocial_cont {
+  display: flex;
+  justify-content: end;
+}
+.footer_fila1 {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    align-items: center;
+    width: 100%;
+}
+.footer_Cont_Listas {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.list_Cont {
+  display: flex;
+  flex-direction: column;
+  /*  border-right: 0.5px solid black; */
+  padding: 0.5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 0;
+  text-align: center;
+}
+.footer_Cont {
+  display: flex;
+  width: 80%;
+  align-content: center;
+  background-color: #1da3a357;
+  flex-direction: column;
+  padding: 1rem;
+  margin-top: 1%;
+}
+.footer_fila2 {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: stretch;
+}
+.footer_cont_Texto {
+  text-align: center;
+}
+.footer_cont_Logo_Rs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_text_logo{
+    text-align: left;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #ebd758;
+    text-shadow: -1px 0 #414d68, 0 1px #414d68, 1px 0 #414d68, 0 -1px #414d68,
+      -2px 2px 0 #414d68, 2px 2px 0 #414d68, 1px 1px #414d68, 2px 2px #414d68,
+      3px 3px #414d68, 4px 4px #414d68, 5px 5px #414d68, 6px 6px #414d68,
+      7px 7px #414d68, 8px 8px #414d68, 9px 9px #414d68;
+}
+.RSocial_Logo{
+    width: 100%;
+}
+
+.footer_cont_RS_Derech{
+    display: flex;
+    flex-direction: row;
+}

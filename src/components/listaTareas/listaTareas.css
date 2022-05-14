@@ -1,4 +1,8 @@
 
+.contListaTareas{
+  margin-bottom: 1%;
+}
+
 .cont_tareas {
   display: grid;
   grid-template-columns: 90% 10%;
@@ -13,6 +17,7 @@
   align-items: center;
  
 }
+
 .text_tarea{
   display: flex;
   text-align: start;
@@ -39,14 +44,14 @@ margin-right: 0.5rem;
   grid-template-columns: 90% 10%;
   grid-template-rows: 100%;
   grid-gap: 0;
-  border: 1px solid #0d6efd52;
+  border: 1px solid #010711;
   width: 24rem;
   /* height: 3rem; */
   font-style: oblique;
   font: caption;
   margin-top: 0.8px;
   align-items: center;
-  background-color: #25549763;
+  background-color: #09f51563;
 
 }
 
