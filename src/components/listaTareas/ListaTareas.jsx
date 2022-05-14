@@ -3,12 +3,21 @@ import { FormControl, InputGroup, ListGroup } from "react-bootstrap";
 import AgregarTareas from "../AgregarTareas/AgregarTareas";
 import "./listaTareas.css";
 import CloseButton from "react-bootstrap/CloseButton";
-
+import { GrCompliance } from "react-icons/gr";
 
 const ListaTareas = ({ item, handlePrueba, handleChecked }) => {
+  const handleComponente = (check, id) => {
+    if (check) {
+      return <GrCompliance className="closeButton" />;
+    } else {
+      return (
+        <CloseButton onClick={() => handlePrueba(id)} className="closeButton" />
+      );
+    }
+  };
+
   return (
-    <div>
-    
+    <div className="contListaTareas">
       {item.map((tareas) => (
         <div
           key={tareas.id}
@@ -19,11 +28,8 @@ const ListaTareas = ({ item, handlePrueba, handleChecked }) => {
           <div className="text_tarea" onClick={() => handleChecked(tareas.id)}>
             <p>{tareas.nomTarea}</p>
           </div>
-          <div className="buttonClose">
-            <CloseButton
-              onClick={() => handlePrueba(tareas.id)}
-              className="closeButton"
-            />
+          <div className="buttonClose" key={tareas.id}>
+            {handleComponente(tareas.checked, tareas.id)}
           </div>
         </div>
       ))}
